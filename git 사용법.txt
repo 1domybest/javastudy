@@ -1,0 +1,80 @@
+git
+
+로컬 저장소(local) > 원격저장소 (remote);
+
+1.로컬 저장소 만들기
+ * 로컬저장소 : D:\spring0303\install\javastudy
+ 	1)이동 : cd D:\spring0303\install\javastudy
+	2)지정 :git init
+	-> 로컬 저장소로 저장되면 ".git" 숨김 폴더가 생성됩니다.
+2.
+로그인
+git config --global user.name 'ollie'
+git config --global user.email 'dhstjrxo123@gmail.com'
+
+3.
+git add .
+4.
+커밋
+git commit -m '커밋메시지' (최초1회는 커밋 에드 분리)
+5.
+깃허브 주소등록
+$ git remote add origin https://github.com/1domybest/javastudy.git
+
+6.로컬과 원격을 이어주는 코드
+$ git pull origin main --allow-unrelated-histories
+
+7. 깃헙 업데이트
+$ git push origin master
+
+
+
+2. 스테이징 하기
+ 	1) 골라서 스테이징하기> git add 소스코드attach.zip
+	2) 전체 스테이징 > git add .(.하기전에 띄어쓰기) 
+
+3.커밋하기(로컬저장소에 저장하기)
+   반드시 "커밋 메시지"를 작성합니다.
+ 예)[01]mian: add xxx.java , modify xxx.jave 
+	1) git commit
+	2)vim  이 열립니다
+		메시지 작성 후 빠져 나오기
+* 간단한 메시지의 경우
+git commit -m '커밋메시지'
+
+git log -상태확인
+
+4.github 회원가입 및 로그인
+
+5.github.com - create repository :원격 저장소 생성하기
+	1)이름: ollie
+	2)옵션
+		(1)add README.md
+		(2)add.gitignore - template(java)
+6.원격 저장소의 주소
+	https://github.com/1domybest/ollie.git
+7.로컬 저장소(D:/spring0303/install/javastudy)의 원격 저장소 등록하기 
+#로컬 저장소 -> 원격저장소 (git push)
+#원격 저장소 -> 로컬저장소(git pull)
+
+git pull origin main --allow-unrelated-histories
+빠저나오기 =  esc :wq 엔터 
+
+
+gitignore 설정
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+#.project
+
+위에있는걸 아래로 변경
+
+# Uncomment this line if you wish to ignore the project description file.
+# Typically, this file would be tracked if it contains build/dependency configurations:
+.project
+
+#classpath         	<<<바로밑 추가된것
+.classpath		<<<바로밑 추가된것
+
+
+
