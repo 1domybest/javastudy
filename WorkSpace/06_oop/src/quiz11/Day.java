@@ -1,5 +1,5 @@
 package quiz11;
-
+//변경
 public class Day {
 
 	// field
