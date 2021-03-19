@@ -1,0 +1,6 @@
+package quiz05_starcraft;
+
+public class Terran {
+
+	
+}

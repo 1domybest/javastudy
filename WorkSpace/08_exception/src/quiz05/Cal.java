@@ -1,0 +1,26 @@
+package quiz05;
+
+public class Cal {
+	private  double result;
+	
+	public void add(int a) {
+		result += a;
+		System.out.println("현재 저장된 값: "+result);
+	}
+	public void minor(int a) {
+		result -= a;
+		System.out.println("현재 저장된 값: "+result);
+		
+	}
+	public void times(int a) {
+		result *= a;
+		System.out.println("현재 저장된 값: "+result);
+	}
+	public void split(int a) {
+		result /= a;
+		System.out.println("현재 저장된 값: "+result);
+		
+	}
+	
+
+}

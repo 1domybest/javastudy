@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
 <fullyQualifiedTypeName name="quiz12.SeatGroup"/>
 <fullyQualifiedTypeName name="quiz12.ConcertHall"/>
@@ -24,4 +22,24 @@
 <fullyQualifiedTypeName name="quiz04.KoreanFighter"/>
 <fullyQualifiedTypeName name="quiz04.GlobalFighter"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="ex14_interface.Anulmal"/>
+<fullyQualifiedTypeName name="ex14_interface.Animal"/>
+<fullyQualifiedTypeName name="ex14_interface.Eagle"/>
+<fullyQualifiedTypeName name="ex14_interface.Lion"/>
+<fullyQualifiedTypeName name="ex14_interface.Shark"/>
+<fullyQualifiedTypeName name="ex15_interface_extends.Computable"/>
+<fullyQualifiedTypeName name="ex15_interface_extends.SmartPhone"/>
+<fullyQualifiedTypeName name="ex16_interface_extends.Person"/>
+<fullyQualifiedTypeName name="quiz05_starcraft.FireBat"/>
+<fullyQualifiedTypeName name="quiz05_starcraft.Tank"/>
+<fullyQualifiedTypeName name="quiz05_starcraft.Terran"/>
+<fullyQualifiedTypeName name="quiz05_starcraft.Bunker"/>
+<fullyQualifiedTypeName name="quiz05_starcraft.Bunkable"/>
+<fullyQualifiedTypeName name="quiz05_starcraft.Marine"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="ex05_exception_class.Cal"/>
 </qualifiedTypeNameHistroy>

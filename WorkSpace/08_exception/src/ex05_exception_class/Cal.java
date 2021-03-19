@@ -1,0 +1,29 @@
+package ex05_exception_class;
+
+public class Cal {
+	private  double result;
+	
+	public void add(int a) {
+		result += a;
+		System.out.println("현재 저장된 값: "+result);
+	}
+	public void minor(int a) {
+		result -= a;
+		System.out.println("현재 저장된 값: "+result);
+		
+	}
+	public void times(int a) {
+		result *= a;
+		System.out.println("현재 저장된 값: "+result);
+	}
+	public void split(int a) throws ArithmeticException { //2. 나누기 메소드가 어떤예외를 던지는지 명시합니다.
+		if(a == 0) {
+			throw new ArithmeticException(); //1. 예외 직접 던지기
+		}
+		result /= a;
+		System.out.println("현재 저장된 값: "+result);
+		
+	}
+	
+
+}

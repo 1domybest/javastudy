@@ -1,0 +1,16 @@
+package ex16_interface_extends;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Snake s  = new Snake("뱀");
+		Dog d = new Dog("멍멍이");
+		
+		Person p = new Person();
+		
+		p.feed(s, "똥");
+		p.feed(d, "동");
+		
+		p.walking(d); //컴파일 에러를 내고 싶습니다.
+		p.walking(s);
+	}
+}
