@@ -10,4 +10,18 @@
 <fullyQualifiedTypeName name="ex09_upcasting.Latte"/>
 <fullyQualifiedTypeName name="ex09_upcasting.Espresso"/>
 <fullyQualifiedTypeName name="ex09_upcasting.Coffee"/>
+<fullyQualifiedTypeName name="quiz02.Company"/>
+<fullyQualifiedTypeName name="ex10_downcasting.Person"/>
+<fullyQualifiedTypeName name="ex10_downcasting.Student"/>
+<fullyQualifiedTypeName name="quiz03.SalaryMan"/>
+<fullyQualifiedTypeName name="ex11_abstract.SalaryMan"/>
+<fullyQualifiedTypeName name="ex12_abstract.Rectangle"/>
+<fullyQualifiedTypeName name="ex12_abstract.Shape"/>
+<fullyQualifiedTypeName name="ex12_abstract.Square"/>
+<fullyQualifiedTypeName name="ex12_abstract.Triangle"/>
+<fullyQualifiedTypeName name="ex12_abstract.Ciecle"/>
+<fullyQualifiedTypeName name="quiz04.Fighter"/>
+<fullyQualifiedTypeName name="quiz04.KoreanFighter"/>
+<fullyQualifiedTypeName name="quiz04.GlobalFighter"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
 </qualifiedTypeNameHistroy>
