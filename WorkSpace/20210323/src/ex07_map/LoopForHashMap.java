@@ -1,0 +1,67 @@
+package ex07_map;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class LoopForHashMap {
+	public static void main(String[] args) {
+		Map<String, String> map = new HashMap<String, String>();
+		
+		map.put("name", "온석태");
+		map.put("age", 26+"");
+		map.put("phone","010-4200-6215");
+		
+		//1. 향상 for문은 key를 뺍니다.
+		//map 에서 key 만 빼는 메소드 : keySet();
+		
+		Set<String> keys = map.keySet();
+		
+//		for (String key : keys) {
+//			System.out.println(key + ":"+map.get(key));
+//}		
+		Iterator<String> iter = keys.iterator();
+		
+		while(iter.hasNext()) {
+		for (String string : keys) {
+			System.out.println(iter.next()+": "+map.get(string));
+			
+		
+		}
+		}
+		
+		//3. 데이터 쌍(pair)으로 뺄수 있습니다.
+		// entry  : key와 value를 묶어서 entry 라고 합니다.
+		//key : getKey();
+		//value : getValue();
+		Set<Map.Entry<String, String>> entrys =  map.entrySet();
+		
+		//	1) for
+			for (Map.Entry<String, String> entry : entrys) {
+				String key = entry.getKey();
+				String value = entry.getValue();
+				System.out.println(key+":"+value);
+			}
+		//	2)Iterator
+			
+		Iterator<Entry<String, String>> iter2 = entrys.iterator();
+		while(iter2.hasNext()) {
+			Map.Entry<String,String> entry = iter2.next();
+			System.out.println(entry);
+		}
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		}
+	}
+
