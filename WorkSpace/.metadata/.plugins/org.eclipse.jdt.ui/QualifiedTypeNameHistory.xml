@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
-<fullyQualifiedTypeName name="quiz12.SeatGroup"/>
-<fullyQualifiedTypeName name="quiz12.ConcertHall"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
-<fullyQualifiedTypeName name="ex08_upcasting.Tv"/>
-<fullyQualifiedTypeName name="ex09_upcasting.Latte"/>
-<fullyQualifiedTypeName name="ex09_upcasting.Espresso"/>
-<fullyQualifiedTypeName name="ex09_upcasting.Coffee"/>
-<fullyQualifiedTypeName name="quiz02.Company"/>
-<fullyQualifiedTypeName name="ex10_downcasting.Person"/>
-<fullyQualifiedTypeName name="ex10_downcasting.Student"/>
 <fullyQualifiedTypeName name="quiz03.SalaryMan"/>
 <fullyQualifiedTypeName name="ex11_abstract.SalaryMan"/>
 <fullyQualifiedTypeName name="ex12_abstract.Rectangle"/>
@@ -21,7 +10,6 @@
 <fullyQualifiedTypeName name="quiz04.Fighter"/>
 <fullyQualifiedTypeName name="quiz04.KoreanFighter"/>
 <fullyQualifiedTypeName name="quiz04.GlobalFighter"/>
-<fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="ex14_interface.Anulmal"/>
 <fullyQualifiedTypeName name="ex14_interface.Animal"/>
 <fullyQualifiedTypeName name="ex14_interface.Eagle"/>
@@ -39,8 +27,6 @@
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
 <fullyQualifiedTypeName name="ex05_exception_class.Cal"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
 <fullyQualifiedTypeName name="ex06_exception_class.UpDown_Execption"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
@@ -48,8 +34,30 @@
 <fullyQualifiedTypeName name="ex07_exception_class.DepositException"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="ex07_exception_class.WithdrawException"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="quiz01.Member"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="ex06_set.LinkedHasgSetMainClass"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashSet"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap.KeySetView"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="lombok.Getter"/>
+<fullyQualifiedTypeName name="lombok.Setter"/>
+<fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+<fullyQualifiedTypeName name="ex09_hash.Board"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="lombok.Data"/>
+<fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="quiz04.Library"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,74 @@
+package ex04_dql;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
+
+import connection.DBconnection;
+
+public class SelectOneMainClass {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Connection con = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null; //select 문의 결과 행을 저장합니다.
+		try {
+			con = DBconnection.getConnection();
+			String sql ="SELECT no,name,department,hiredate FROM staff WHERE no = 1";
+			ps = con.prepareStatement(sql);
+			 rs = ps.executeQuery();
+			 //rs에 저장된 데이터는 반드시 next() 메소드를 호출해서 꺼냅니다.
+			 //next() 메소드
+			 //1. 결과 행에서 순서대로 한 행씩 꺼냅니다.
+			 //2. 결과 행이 존재하면 true 반환하고, 없으면 false
+			if(rs.next()){
+				//칼럼의 인덱스를 적어도되고 칼럼명을 적어도 조회가 가능하다.
+				Map<Integer, Object> map = new HashMap<Integer, Object>();
+				Map<Integer, String> culum = new HashMap<Integer, String>();
+				int no = rs.getInt("no");
+				String name = rs.getString("name");
+				String department = rs.getString(3);
+				Date hiredate = rs.getDate(4);	
+				map.put(1, no);
+				map.put(2, name);
+				map.put(3, department);
+				map.put(4, hiredate);
+				
+				culum.put(1, "no");
+				culum.put(2, "name");
+				culum.put(3, "department");
+				culum.put(4, "hiredate");
+				for (int i = 1 , length = map.size(); i <= length ; i++) {
+			 		
+					System.out.println(culum.get(i)+" : "+map.get(i));
+				}
+			
+				
+			System.out.println("============================================");
+				System.out.println("|NO : ["+rs.getInt("no")+"]      ");
+				System.out.println("|NAME : ["+rs.getString("name")+"]      ");
+				System.out.println("|DEPARTMENT : ["+rs.getString(3)+"]      ");				
+				System.out.println("|HIREDATE : ["+rs.getDate(4)+"]      ");
+			}else {
+				System.out.println("검색된 행이 없습니다");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				//연 순서대로 닫는다.
+				if(rs != null) {rs.close();}
+				if(ps != null) {ps.close();}
+				if(con != null) {con.close();}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}
