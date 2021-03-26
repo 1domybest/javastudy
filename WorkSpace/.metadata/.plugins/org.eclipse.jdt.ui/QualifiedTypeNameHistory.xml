@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="quiz05_starcraft.FireBat"/>
-<fullyQualifiedTypeName name="quiz05_starcraft.Tank"/>
-<fullyQualifiedTypeName name="quiz05_starcraft.Terran"/>
 <fullyQualifiedTypeName name="quiz05_starcraft.Bunker"/>
 <fullyQualifiedTypeName name="quiz05_starcraft.Bunkable"/>
 <fullyQualifiedTypeName name="quiz05_starcraft.Marine"/>
@@ -47,7 +44,6 @@
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="java.sql.DriverManager"/>
 <fullyQualifiedTypeName name="lombok.Data"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
@@ -58,6 +54,10 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="dto.StaffDto"/>
 <fullyQualifiedTypeName name="main.StaffManager"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
 </qualifiedTypeNameHistroy>

@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 
 public class FileWriterMainClass3 {
 	public static void main(String[] args) {
-			PrintWriter out = null;
+		PrintWriter out = null;
 		try {
 			out = new PrintWriter("index.html");
 			out.println("<script>");
@@ -15,8 +15,6 @@ public class FileWriterMainClass3 {
 			e.printStackTrace();
 		}finally {
 			if(out != null) {out.close();}
-		}catch (Exception e) {
-			e.printStackTrace();
 		}
 	}
 	}
