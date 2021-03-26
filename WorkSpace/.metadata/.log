@@ -3700,3 +3700,70 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-03-26 11:03:57.587
 !MESSAGE close() called when useCnt is already zero for Repository[C:\Users\ITSC\git\javastudy\.git]
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-03-26 11:07:43.563
+!MESSAGE https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:128)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:375)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:491)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:523)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:361)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:167)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-03-26 11:07:55.354
+!MESSAGE https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:128)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:375)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:491)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:523)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:361)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:167)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-03-26 11:08:05.853
+!MESSAGE https://github.com/1domybest/javastudy/tree/master: https://github.com/1domybest/javastudy/tree/master/info/refs?service=git-upload-pack not found: Not Found
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/1domybest/javastudy/tree/master: https://github.com/1domybest/javastudy/tree/master/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:128)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:375)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/1domybest/javastudy/tree/master: https://github.com/1domybest/javastudy/tree/master/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:491)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:523)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:361)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:167)
+	... 4 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2021-03-26 11:09:23.436
+!MESSAGE https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:189)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:128)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.clone.SourceBranchPage$9.run(SourceBranchPage.java:375)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/1domybest/javastudy/tree/master/WorkSpace: https://github.com/1domybest/javastudy/tree/master/WorkSpace/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:491)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:523)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:361)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:167)
+	... 4 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2021-03-26 11:13:44.337
+!MESSAGE close() called when useCnt is already zero for Repository[D:\javastudy\.git]
