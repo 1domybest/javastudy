@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="ex15_interface_extends.SmartPhone"/>
-<fullyQualifiedTypeName name="ex16_interface_extends.Person"/>
 <fullyQualifiedTypeName name="quiz05_starcraft.FireBat"/>
 <fullyQualifiedTypeName name="quiz05_starcraft.Tank"/>
 <fullyQualifiedTypeName name="quiz05_starcraft.Terran"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="dto.StaffDto"/>
 <fullyQualifiedTypeName name="main.StaffManager"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>

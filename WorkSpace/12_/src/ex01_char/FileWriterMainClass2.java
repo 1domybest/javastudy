@@ -1,6 +1,7 @@
 package ex01_char;
 
 import java.io.FileWriter;
+import java.io.IOException;
 
 public class FileWriterMainClass2 {
 	/*
@@ -15,9 +16,11 @@ public class FileWriterMainClass2 {
 	 */
 	public static void main(String[] args) {
 		try (FileWriter fw = new FileWriter("text2.txt")){
-			
-		} catch (Exception e) {
-			// TODO: handle exception
+			char[] cbuf = {'H','E','l','l','o'};
+			fw.write(cbuf,0,cbuf.length);
+		} catch (IOException e) {
+		e.printStackTrace();
+		
 		}
 	}
 }
