@@ -1,0 +1,11 @@
+package ex16_interface_extends;
+
+public class MainClass {
+	public static void main(String[] args) {
+		Snake s  = new Snake();
+		Dog d = new Dog();
+		
+		Person p = new Person();
+		p.feed(s.getName(), "똥");
+	}
+}

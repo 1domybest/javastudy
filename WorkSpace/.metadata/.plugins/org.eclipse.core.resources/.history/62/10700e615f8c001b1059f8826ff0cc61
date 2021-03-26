@@ -1,0 +1,30 @@
+package ex03_dml;
+
+import java.sql.*; //자바 sql 패키지의 모든 패키지 import합니다.   * = all
+
+import connection.DBconnection;
+
+public class InsertMainClass {
+	public static void main(String[] args) {
+			Connection con = null;
+			PreparedStatement ps =null;
+			try {
+				con = DBconnection.getConnection();
+				String sql = "INSRET INTO staff (no,name,department,hireDate) VALUES(1,'alice','총무','21/03/22')";
+				ps = con.prepareStatement(sql);
+				
+				ps.executeUpdate();
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					if(con != null) {con.close();}
+					if(ps != null) {ps.close();}
+				} catch (Exception e) {
+					e.printStackTrace();
+					
+				}
+			}
+	}
+}

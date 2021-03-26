@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;ex06_exception_class&apos; to &apos;08_exception/src&apos;&#x0D;&#x0A;- Original project: &apos;06_oop&apos;&#x0D;&#x0A;- Destination element: &apos;08_exception/src&apos;&#x0D;&#x0A;- Original element: &apos;06_oop/src/ex06_exception_class&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=08_exception/src" element1="/src&lt;ex06_exception_class" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1616137327599" version="1.0"/>
+</session>

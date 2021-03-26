@@ -1,0 +1,40 @@
+package ex06_set;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+
+public class IteratorMainClass {
+	public static void main(String[] args) {
+		Set<String> set = new HashSet<String>();
+		
+		set.add("movie");
+		set.add("music");
+		set.add("sport");
+		
+		//set를 순회할수 있는 Iterator 객체 생성
+		Iterator<String> iter =set.iterator();
+		
+		//hasNext(): 다음요소가 있으면 true 없으면 false 반환
+		//next() : 다음요소를 가져온다
+		
+		while(iter.hasNext()) {
+			String str = iter.next();
+			System.out.println(str);
+		}
+		
+		List<String> list = new ArrayList<String>();
+		Iterator<String> iter2 =list.iterator();
+		list.add("1");
+		list.add("2");
+		list.add("3");
+		list.add("4");
+		
+		while(iter2.hasNext()) {
+		
+			System.out.println(iter2.next());
+		}
+	}
+}

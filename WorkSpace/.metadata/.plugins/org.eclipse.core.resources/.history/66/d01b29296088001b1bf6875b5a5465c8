@@ -1,0 +1,5 @@
+package quiz05_starcraft;
+
+public class Bunker {
+	private String name;
+}

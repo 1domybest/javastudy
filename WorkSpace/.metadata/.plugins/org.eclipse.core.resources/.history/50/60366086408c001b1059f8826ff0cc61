@@ -1,0 +1,14 @@
+package ex01_connection;
+
+public class Mainclass {
+	public static void main(String[] args) {
+		//1.oracle.jdbc.driver.OracleDriver 클래스를 메모리에 올립니다.
+		
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver"); 
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

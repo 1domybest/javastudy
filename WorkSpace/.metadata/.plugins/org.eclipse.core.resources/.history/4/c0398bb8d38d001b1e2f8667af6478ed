@@ -1,0 +1,10 @@
+package ex01_char;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class FileWriterMainClass3 {
+	public static void main(String[] args) {
+
+	}
+	}

@@ -1,0 +1,26 @@
+package connection;
+
+import java.sql.Connection;
+
+public class TestMainClass {
+	public static void main(String[] args) {
+		//DBconnection 클래스의 getConnection() 메소드를 호출합니다
+		//getConnection() throws Exception 이므로 try- catch 처리합니다.
+		try {
+			//====인스턴트 메소드 getConnection()====
+			//DBconnection connection = new DBconnection();	
+			//Connection con = connection.getConnection();
+			
+			//====클래스 메소드 getConnection()====
+			//클래스 메소드 처리는 static으로 합니다.
+			Connection con = DBconnection.getConnection();
+			System.out.println("(づ｡◕‿‿◕｡)づ ----[DB 접속 성공]----(づ｡◕‿‿◕｡)づ\n");
+			con.close();
+			System.out.println("⎛⎝⎛° ͜ʖ°⎞⎠⎞====[DB 접속 종료]====⎛⎝⎛° ͜ʖ°⎞⎠⎞\n");
+		} catch (Exception e) {			
+			System.out.println(" ( Ĭ ^ Ĭ ) ====[DB 접속 실패]==== ( Ĭ ^ Ĭ ) \n");
+			System.out.println("\n예외 내용 : "+e.getMessage());
+			e.printStackTrace();
+		}
+	}
+}

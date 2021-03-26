@@ -1,0 +1,29 @@
+package ex01_connection;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class Mainclass {
+	public static void main(String[] args) {
+		
+		try {
+			//1.oracle.jdbc.driver.OracleDriver 클래스를 메모리에 올립니다.
+			Class.forName("oracle.jdbc.driver.OracleDriver"); 
+			//2.접속 정보
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			String user = "spring";
+			String password = "1111";
+			
+			//3.접속
+			//DriverManager 클래스가 접속을 담당하고 , 
+			//접속 결과는 Connection 클래스에 저장합니다.
+			Connection con = DriverManager.getConnection(url,user,password);//SQLException 발생 가능
+			
+			//4.접속이 성공하면 여기로 도착!
+			System.out.println("DB 접속 성공!");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

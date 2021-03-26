@@ -1,0 +1,17 @@
+package ex15_interface_extends;
+
+public class SmartPhone extends Phone implements Computable {
+
+	@Override
+	public void playApp() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sendCall() {
+		// TODO Auto-generated method stub
+		super.sendCall();
+	}
+
+}

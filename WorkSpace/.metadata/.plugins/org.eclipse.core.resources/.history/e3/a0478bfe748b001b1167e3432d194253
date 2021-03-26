@@ -1,0 +1,15 @@
+package quiz01;
+
+import java.sql.Date;
+
+public class Member {
+	private int mNo; //회원 번호
+	private String mId; //회원 아이디
+	private Date mDate; //회원 가입일
+	
+	
+	//lombok 을 활용한 getter,setter,sonstructor 자동 생성
+	
+	
+	
+}

@@ -1,0 +1,6 @@
+package ex07_exception_class;
+
+@SuppressWarnings("serial")
+public class WithdrawException extends Exception{
+
+}

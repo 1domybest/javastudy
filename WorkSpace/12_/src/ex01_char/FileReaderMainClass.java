@@ -1,6 +1,7 @@
 package ex01_char;
 
 import java.io.FileReader;
+import java.io.IOException;
 
 public class FileReaderMainClass {
 	/*
@@ -16,7 +17,19 @@ public class FileReaderMainClass {
 	 *  5.예외처리가 필요합니다.
 	 */
 	public static void main(String[] args) {
-		
+		try (FileReader fr = new FileReader("text2.txt")){
+			//read() 메소드를 이용해서 읽기
+			while(true) {
+				int ch = fr.read(); //읽은 문자 또는 -1 이 ch에 저장됩니다.
+				if(ch ==-1) {
+					break;
+				}else {
+					System.out.print((char)ch);
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		
 	}
 }

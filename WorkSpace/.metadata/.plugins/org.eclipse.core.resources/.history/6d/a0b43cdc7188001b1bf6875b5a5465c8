@@ -1,0 +1,11 @@
+package ex02_try_catch;
+
+public class MainClass {
+	public static void main(String[] args) {
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

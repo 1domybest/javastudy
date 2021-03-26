@@ -1,0 +1,38 @@
+package ex04_dql;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+import connection.DBconnection;
+
+public class SelectOneMainClass {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Connection con = null;
+		PreparedStatement ps = null;
+		ResultSet rs = null; //select 문의 결과 행을 저장합니다.
+		try {
+			con = DBconnection.getConnection();
+			String sql ="SELECT * FORM staff WHERE no = 1";
+		
+			ps = con.prepareStatement(sql);
+			 rs = ps.executeQuery();
+			if(rs == null){
+				System.out.println("검색된 행이 없습니다");
+			}else {
+				System.out.println(rs.next());
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(ps != null) {ps.close();}
+				if(con != null) {con.close();}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

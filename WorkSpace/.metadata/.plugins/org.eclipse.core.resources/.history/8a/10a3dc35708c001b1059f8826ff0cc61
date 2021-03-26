@@ -1,0 +1,29 @@
+package ex04_dql;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import connection.DBconnection;
+
+public class SelectOneMainClass {
+	public static void main(String[] args) {
+		Connection con = null;
+		PreparedStatement ps = null;
+		try {
+			con = DBconnection.getConnection();
+			String sql ="";
+			
+			
+			ps = con.prepareStatement(sql);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(ps != null) {ps.close();}
+				if(con != null) {con.close();}
+			} catch (Exception e2) {
+				// TODO: handle exception
+			}
+		}
+	}
+}

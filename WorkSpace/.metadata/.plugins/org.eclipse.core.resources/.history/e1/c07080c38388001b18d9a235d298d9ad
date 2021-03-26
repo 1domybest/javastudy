@@ -1,0 +1,6 @@
+package ex06_exception_class;
+//예외 클래스는 "직렬화" 를 대비해서 serialversionID 를 생성하라고 항상 경고를 띄웁니다.
+@SuppressWarnings("serial")
+public class UpDown_Execption extends Exception {
+
+}

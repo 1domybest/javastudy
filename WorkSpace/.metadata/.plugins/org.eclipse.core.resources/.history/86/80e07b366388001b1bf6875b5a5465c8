@@ -1,0 +1,16 @@
+package quiz05_starcraft;
+
+public class Bunker {
+	Bunkable [] terrans;
+	private int idx;
+
+	public Bunker() {
+		terrans = new Bunkable[10];
+	}
+	public void add(Bunkable terran) {
+		if(idx < terrans.length) {
+			terrans[idx++] = terran;
+		}
+	}
+	
+}

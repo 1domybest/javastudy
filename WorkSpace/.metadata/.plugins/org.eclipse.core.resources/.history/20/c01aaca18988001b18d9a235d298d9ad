@@ -1,0 +1,51 @@
+package ex06_exception_class;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class UpDown {
+	private int answer;
+	private int count;
+	private Scanner sc = new Scanner(System.in);
+	
+	
+	public UpDown() {
+		answer = (int)(Math.random() * 100) + 1; //1~100 사이의 난수 발생
+	}
+	
+	public int challenge() throws UpDown_Execption,InputMismatchException{
+		count++; //도전한 횟수
+		System.out.print("1~100 사이의 정수를 입력하세요 >>>");
+		int n = sc.nextInt(); //입력이 int 가 아니면 inputmismatchException 이 발생합니다.
+		if(n < 1 || n > 100) {
+			throw new UpDown_Execption();
+		}
+		return n;	
+		
+	}
+	public void play() {
+		while(true) {
+			try {
+				int n = challenge();
+				if(answer > n) {
+					System.out.println("UP");
+					count++;
+				}else if(n<answer) {
+					System.out.println("Down");
+					count++;
+				}else if(n == answer) {
+					count++;
+					System.out.println("정답!  횟수:"+count);
+					return;
+				}
+			} catch (UpDown_Execption e) {
+				System.out.println(e.getMessage()); //
+			}catch(InputMismatchException e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,13 @@
+package ex01_exception;
+
+//exception (예외)
+//1.개발자가 회피할 수 있는 수준의 오류입니다.
+// erro는 회피불가
+//모든 예외는 Exception 클래스를 상속받은 클래스입니다.
+
+
+public class MainClass {
+	public static void main(String[] args) {
+		System.out.println(2 / 0);
+	}
+}

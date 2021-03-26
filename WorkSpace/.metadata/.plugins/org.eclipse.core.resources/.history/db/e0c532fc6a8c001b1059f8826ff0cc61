@@ -1,0 +1,40 @@
+
+package ex03_dml;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import connection.DBconnection;
+
+public class UpdateMainClass {
+	public static void main(String[] args) {
+		Connection con = null;
+		PreparedStatement ps = null;
+		
+		try {
+			con = DBconnection.getConnection();
+			String sql = "UPDATE staff SET department = '?' WHERE no = ?";
+			ps =con.prepareStatement(sql);
+			
+			ps.setString(1, "자재");
+			ps.setInt(2, 3);
+			int result = ps.executeUpdate();
+			
+			if(result == 0) {
+				System.out.println("행 변경에 실패하였습니다");
+			}else {
+				System.out.println(result + "행을 변경 완료 하였습니다 ");
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if(con != null) {con.close();}
+				if(ps != null) {ps.close();}
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
+}

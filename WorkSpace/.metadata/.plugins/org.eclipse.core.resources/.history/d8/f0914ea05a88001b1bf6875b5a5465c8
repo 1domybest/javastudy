@@ -1,0 +1,7 @@
+package ex16_interface_extends;
+
+public class MainClass {
+	public static void main(String[] args) {
+		
+	}
+}

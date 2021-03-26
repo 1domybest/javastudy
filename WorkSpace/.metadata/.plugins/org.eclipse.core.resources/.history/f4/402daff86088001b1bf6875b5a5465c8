@@ -1,0 +1,12 @@
+package quiz05_starcraft;
+
+public class Terran {
+	Terran[] terrans;
+	int idx;
+	
+	public void Terran(int count) {
+		if(idx<count) {
+			Terran = new terrans[idx++];
+		}
+	}
+}

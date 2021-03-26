@@ -1,0 +1,15 @@
+package ex03_dml;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import connection.DBconnection;
+
+public class InsertMainClass2 {
+	PreparedStatement ps = null;
+	Connection con = null;
+	public static void main(String[] args) {
+		 con = DBconnection.getConnection();
+		 
+	}
+}

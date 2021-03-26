@@ -1,0 +1,38 @@
+package ex03_dml;
+
+import java.sql.*; //자바 sql 패키지의 모든 패키지 import합니다.   * = all
+
+import connection.DBconnection;
+
+public class InsertMainClass {
+	public static void main(String[] args) {
+			Connection con = null;
+			PreparedStatement ps =null;
+			try {
+				con = DBconnection.getConnection();
+				String sql = "INSRET INTO staff (no,name,department,hireDate) VALUES (1,'alice','총무','21/03/22')";
+				ps = con.prepareStatement(sql);
+				int result = ps.executeUpdate();
+				// executeUpdate()의 메소드 반환값 은 변화가 생의 행(row)의 갯수가 반환됩니다
+				//예) 1행이 삽입되었습니다  -> 반환값 : 1
+				//예) 2행이 삽입되었습니다  -> 반환값 : 2
+				//#실패하면 0이 반환#
+				if(result == 0) {
+					System.out.println("행 삽입에 실패하였습니다.");
+				}else {
+					System.out.println(result+ "행이 삽입되었습니다.");
+				}
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					if(con != null) {con.close();}
+					if(ps != null) {ps.close();}
+				} catch (Exception e) {
+					e.printStackTrace();
+					
+				}
+			}
+	}
+}

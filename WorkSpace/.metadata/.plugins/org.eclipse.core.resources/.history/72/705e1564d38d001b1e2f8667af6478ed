@@ -1,0 +1,14 @@
+package ex01_char;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class BufferedWriterMainClass2 {
+	public static void main(String[] args) {
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("text4.txt"))){
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

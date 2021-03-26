@@ -1,0 +1,12 @@
+package ex06_exception_class;
+
+public class MainClass  {
+	public static void main(String[] args) {
+		UpDown u = new UpDown();
+		try {
+			System.out.println(u.challenge());			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

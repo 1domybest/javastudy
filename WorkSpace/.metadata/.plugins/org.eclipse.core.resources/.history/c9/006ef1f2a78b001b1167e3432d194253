@@ -1,0 +1,53 @@
+package ex09_hash;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+
+public class Board {
+	//field
+	private int bNo;
+	private String title;
+	private String writer;
+	
+	@Override
+	public String toString() {
+		return "[bNo=" + bNo + ", title=" + title + ", writer=" + writer + "]";
+	}
+	
+}
+/*
+ * HashSet 에 Board를 저장하고자 합니다.
+ * 
+ * 동일한 Board의 경우 안 되도록 설정해야 합니다.
+ * 
+ * 1.자바의 기본 동작
+ * 	1)저장할 Board의 해시코드를 확인합니다.(저장된 주소)
+ * 	2)같은 해시코드를 가지고있는 Board가 있습니까? 없습니다.
+ *  3)따라서 , 같은 Board는 없다고 판단합니다.
+ *  4)무조건 저장됩니다.
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

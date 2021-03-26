@@ -1,0 +1,19 @@
+package ex07_map;
+
+
+import java.util.Map;
+
+/*
+ * HashMap 클래스
+ * 	1.Map 인터페이스를 구현한 클래스 입니다.
+ *  2.데이터를 쌍(pair)으로 저장(key,value)
+ *  	1) 키(key) : 중복 불가
+ *  	2) 값(value) : 중복 가능
+ *  4.인덱스의 역할을 키(key)가 수행합니다.
+ *  	
+ */
+public class HashMapMainClass {
+	public static void main(String[] args) {
+		Map<K, V>
+	}
+}

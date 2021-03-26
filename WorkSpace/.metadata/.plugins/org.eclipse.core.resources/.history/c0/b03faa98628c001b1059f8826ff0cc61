@@ -1,0 +1,30 @@
+package ex03_dml;
+
+import java.sql.*;
+
+import connection.DBconnection;
+
+
+public class InsertMainClass2 {
+	public static void main(String[] args) {
+		Connection con = null;
+		PreparedStatement ps = null;
+		try {
+			con = DBconnection.getConnection();
+			String sql = "INSERT INTO staff (no,name,department,hireDate) VALUES (?,?,?,?)";
+			ps = con.prepareStatement(sql);
+			//변수 처리 (? 에 값을 전달하기)
+			ps.setInt(1, 2); //1번째 ?
+			ps.setString(2, "emily"); //2번째 ?
+			ps.setString(3, "인사"); //3번째 ?
+			ps.setDate(4, new Date(System.currentTimeMillis())); //4번째 ?
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		 
+	}
+}

@@ -1,0 +1,6 @@
+package ex07_exception_class;
+
+public class MainClass  {
+	public static void main(String[] args) {
+	
+}

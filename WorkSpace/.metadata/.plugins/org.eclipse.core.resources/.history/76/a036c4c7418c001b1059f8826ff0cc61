@@ -1,0 +1,16 @@
+package ex01_connection;
+
+public class Mainclass {
+	public static void main(String[] args) {
+		
+		try {
+			//1.oracle.jdbc.driver.OracleDriver 클래스를 메모리에 올립니다.
+			Class.forName("oracle.jdbc.driver.OracleDriver"); 
+			//2.접속 정보
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,7 @@
+package ex07_map;
+
+public class HashMapMainClass {
+	public static void main(String[] args) {
+		
+	}
+}

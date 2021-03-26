@@ -1,0 +1,36 @@
+package ex02_ddl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import connection.DBconnection;
+
+public class DropTableMainClass {
+	public static void main(String[] args) {
+		Connection con =null;
+		PreparedStatement ps=null;
+		try {
+			con = DBconnection.getConnection(); 
+			String sql ="DROP TABLE staff";
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+			System.out.println("staff 테이블이 삭제 되었습니다");
+			
+			ps.close();
+			con.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		
+		} finally {
+			try {
+				ps.close();
+				con.close();
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,17 @@
+package ex03_dml;
+
+import java.sql.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+
+public class Staff {
+	private int no;
+	private String name;
+	private String department;
+	private Date date;
+	
+}

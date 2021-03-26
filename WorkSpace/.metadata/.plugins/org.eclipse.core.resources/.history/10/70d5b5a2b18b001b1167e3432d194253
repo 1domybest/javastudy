@@ -1,0 +1,18 @@
+package quiz04;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Book {
+	private int bNo;
+	private String bTitle;
+	private String bWriter;
+	@Override
+	public String toString() {
+		return "[bNo=" + bNo + ", bTitle=" + bTitle + ", bWriter=" + bWriter + "]";
+	}
+	
+
+}
