@@ -65,7 +65,7 @@ local.properties
 .project
 
 #classpath
-.classpath
+#.classpath
 
 ### Eclipse Patch ###
 # Spring Boot Tooling
