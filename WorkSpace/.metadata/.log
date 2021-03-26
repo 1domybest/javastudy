@@ -3767,3 +3767,9 @@ Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.c
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2021-03-26 11:13:44.337
 !MESSAGE close() called when useCnt is already zero for Repository[D:\javastudy\.git]
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-03-26 11:23:52.319
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-03-26 14:59:47.518
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
