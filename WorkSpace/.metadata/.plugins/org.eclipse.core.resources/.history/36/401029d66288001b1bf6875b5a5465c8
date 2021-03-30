@@ -1,5 +1,0 @@
-package quiz05_starcraft;
-
-public interface Bunkable {
-
-}

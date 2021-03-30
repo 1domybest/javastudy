@@ -1,6 +1,7 @@
 package ex01_char;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -13,8 +14,9 @@ public class BufferedWriterMainClass {
 	public static void main(String[] args) {
 		BufferedWriter bw = null;
 		FileWriter fw = null;
-		
+	
 		try {
+			
 			fw = new FileWriter("text3.txt");
 			bw = new BufferedWriter(fw);
 			bw.write("안녕하세요.\n");

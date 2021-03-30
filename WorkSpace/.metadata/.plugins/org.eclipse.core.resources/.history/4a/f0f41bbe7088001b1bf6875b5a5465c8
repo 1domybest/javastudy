@@ -1,9 +1,0 @@
-package ex01_exception;
-
-//exception (예외)
-
-public class MainClass {
-	public static void main(String[] args) {
-		
-	}
-}

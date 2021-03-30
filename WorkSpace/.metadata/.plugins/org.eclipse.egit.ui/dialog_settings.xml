@@ -9,12 +9,14 @@
 		<item value="ITSC &lt;dhstjrxo123@gmail.com&gt;"/>
 	</list>
 	<list key="EGit.KnownHosts">
-		<item value="bitbucket.org"/>
 		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
 		<item value="github.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
 		<item value="https://github.com/1domybest/javastudy"/>
+		<item value="https://github.com/1domybest/javastudy/tree/master/WorkSpace"/>
+		<item value="https://github.com/1domybest/javastudy/tree/master"/>
 	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
@@ -22,6 +24,12 @@
 		<item key="sortItemState" value="false"/>
 	</section>
 	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\ITSC\git\javastudy\.git">
+			<item value="empty"/>
+		</list>
+		<list key="D:\javastudy\.git">
+			<item value="empty"/>
+		</list>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="635"/>
