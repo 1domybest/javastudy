@@ -1,61 +1,67 @@
 package ex02_socket;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
-import java.io.ObjectInputStream.GetField;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.Arrays;
+import java.util.Scanner;
 
 public class ServerMainClass {
+
 	public static void main(String[] args) {
 		
-		//ServerSocket : 서버
 		ServerSocket server = null;
+		Socket client = null;
+		BufferedInputStream bis = null;
+		BufferedOutputStream bos = null;
+		Scanner sc = new Scanner(System.in);
 		
 		try {
-			//서버 생성
+			
+			// 서버 생성
 			server = new ServerSocket();
+			server.bind(new InetSocketAddress("localhost", 4966));
 			
-			
-			
-			//접속할 클라이언트 정보
-			server.bind(new InetSocketAddress("localhost",4966));
-			
-			//서버는 항상 켜져있다(무한루프 로 구현).
-			while(true) {
 				
-				System.out.println("=====서버가 실행중입니다.======");
-				
-				//클라이언트의 접속 허용
-				Socket client =server.accept();
-				
-				//클라이언트 접속 주소
+				// 클라이언트 접속처리
+				System.out.println("=====서버가 동작하고 있습니다.=====");
+				client = server.accept();
 				InetSocketAddress isa = (InetSocketAddress)client.getRemoteSocketAddress();
-				System.out.println("["+isa.getHostName()+"]  클라이언트가 접속되었습니다.");
+				System.out.println("접속 클라이언트: [" + isa.getHostName() + "]");
 				
-				//클라이언트 에게 웰컴 메세지 보내기
-				String message = "Welcome to My Server 안녕";
+				while (true) {
+				// 클라이언트가 보낸 메시지 받기
+				bis = new BufferedInputStream(client.getInputStream());
+				byte[] b = new byte[1024];
+				int length = bis.read(b);  // 메시지: b, 메시지글자수: length
+				String message = new String(b, 0, length, "UTF-8");
+				System.out.println(message);
 				
-				OutputStream os = client.getOutputStream();
-				os.write(message.getBytes("UTF-8"));
-				os.flush(); //혹시 스트림에 남아 있는 데이터를 강제로 밀어내기
+	
+					bos = new BufferedOutputStream(client.getOutputStream());
+					System.out.print("클라이언트 에게 답변하세요>>>");
+					String answer = sc.next();
+					bos.write(answer.getBytes("UTF-8"));
+					bos.flush();
 				
 				
 			}
 			
-			
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
-			
-		}finally {
+		} finally {
 			try {
-				if(server.isClosed()) {server.close();}
+				if(bos != null) {bos.close();}
+				if(bis != null) {bis.close();}
+				if ( !server.isClosed() ) {
+					server.close();
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
+
 	}
+
 }

@@ -1,7 +1,0 @@
-package ex09_hash;
-
-public class BoardMainClass {
-	public static void main(String[] args) {
-		Board board1 = new Board(1000,"공지","관리자");
-	}
-}

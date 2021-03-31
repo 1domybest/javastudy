@@ -1,9 +1,0 @@
-package ex05_list;
-
-public class LinkedListMainClass {
-	public static void main(String[] args) {
-		//장점: 모든 위치에 추가/삭제가 빠르다
-		//단점: 순차적인 접근이 느리다.
-		
-	}
-}
